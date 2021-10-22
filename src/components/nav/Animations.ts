@@ -51,13 +51,13 @@ export const firstListEl = {
   visible: {
     y: 0,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       delay: 0.5,
     },
   },
   hover: {
     scale: 1.1,
-    textShadow: "2px 2px 2px rgba(57,62,250,0.4)",
+    color: "#393EFA",
   },
 };
 
@@ -68,13 +68,13 @@ export const secondListEl = {
   visible: {
     y: 0,
     transition: {
-      duration: 0.75,
-      delay: 1,
+      duration: 0.5,
+      delay: 0.75,
     },
   },
   hover: {
     scale: 1.1,
-    textShadow: "2px 2px 2px rgba(57,62,250,0.4)",
+    color: "#393EFA",
   },
 };
 
@@ -85,12 +85,12 @@ export const thirthListEl = {
   visible: {
     y: 0,
     transition: {
-      duration: 0.75,
-      delay: 1.5,
+      duration: 0.5,
+      delay: 1,
     },
   },
   hover: {
     scale: 1.1,
-    textShadow: "2px 2px 2px rgba(57,62,250,0.4)",
+    color: "#393EFA",
   },
 };
