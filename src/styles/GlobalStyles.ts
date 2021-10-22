@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        font-family: "Heebo", sans-serif;
+        font-family: 'Georama', sans-serif;
+        overflow-x: hidden;
     }
 `;
