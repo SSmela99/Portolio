@@ -7,12 +7,13 @@ export const StyledPage = styled.section`
   position: relative;
   background-color: transparent;
   max-height: 1200px;
-  min-height: 600px;
+  min-height: 900px;
   overflow: hidden;
 
   @media (max-width: 1023px) {
     height: 100%;
     max-height: unset;
+    min-height: unset;
   }
 `;
 
@@ -23,6 +24,7 @@ export const StyledBackgroundContainer = styled.div`
   max-height: inherit;
   display: flex;
   z-index: -1;
+  min-height: inherit;
 
   @media (max-width: 1023px) {
     flex-direction: column-reverse;
