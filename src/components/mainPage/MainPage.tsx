@@ -64,7 +64,7 @@ const MainPage = () => {
           </div>
           <div className="flex items-center lg:flex-row flex-col">
             <motion.div
-              className="lg:h-full lg:mx-10 lg:w-1/2 h-64 w-64 lg:rounded-none rounded-full lg:my-0 my-5"
+              className="lg:h-full lg:mx-10 lg:w-1/2 md:h-64 md:w-64 h-48 w-48 lg:rounded-none rounded-full lg:my-0 my-5"
               variants={image}
               initial="hidden"
               animate="visible"
@@ -72,7 +72,7 @@ const MainPage = () => {
               <img
                 src={FaceImage}
                 alt="face"
-                className="lg:h-full lg:w-full h-64 w-64 lg:rounded-none rounded-full"
+                className="lg:h-full lg:w-full md:h-64 md:w-64 h-48 w-48 mx-auto lg:rounded-none rounded-full"
               />
             </motion.div>
             <motion.div
