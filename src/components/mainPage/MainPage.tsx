@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import {
   StyledPage,
@@ -6,23 +6,50 @@ import {
   StyledBackgroundLeft,
   StyledBackgroundRight,
   StyledContent,
+  ScrollButton,
 } from "./Styles";
 
 import FaceImage from "../../assets/face.jpg";
-import { useIsMedium } from "../../utils/mediaQueries";
 
 import { AiOutlineGithub as Github } from "react-icons/ai";
 import { BsLinkedin as LinkedIn } from "react-icons/bs";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { image, phone, email, socials, about, darkBg } from "./Animations";
+import {
+  image,
+  phone,
+  email,
+  socials,
+  about,
+  darkBg,
+  projectBtn,
+} from "./Animations";
+
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { Link } from "react-scroll";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const MainPage = () => {
-  const isMedium = useIsMedium();
+  const scrollBtnRef = useRef(null);
 
   useEffect(() => {
-    console.log(isMedium);
-  }, [isMedium]);
+    gsap.fromTo(
+      scrollBtnRef.current,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".home",
+          start: "0%",
+          end: "70%",
+          scrub: 1,
+        },
+      }
+    );
+  }, []);
 
   return (
     <AnimatePresence>
@@ -57,8 +84,24 @@ const MainPage = () => {
             <motion.div variants={socials} initial="hidden" animate="visible">
               <p className="lg:text-light text-dark mb-1">SOCIALS</p>
               <div className="lg:text-light text-dark flex text-3xl lg:justify-start justify-center">
-                <Github className="mr-3" />
-                <LinkedIn />
+                <motion.a
+                  href="https://github.com/SSmela99"
+                  target="_blank"
+                  rel="noreferrer"
+                  variants={projectBtn}
+                  whileHover="hover"
+                >
+                  <Github className="mr-3" />
+                </motion.a>
+                <motion.a
+                  href="https://www.linkedin.com/in/sebastian-smela-36a776201/"
+                  target="_blank"
+                  rel="noreferrer"
+                  variants={projectBtn}
+                  whileHover="hover"
+                >
+                  <LinkedIn />
+                </motion.a>
               </div>
             </motion.div>
           </div>
@@ -91,12 +134,23 @@ const MainPage = () => {
                 Nazywam się Sebastian Smela, zainteresowany technologiami
                 frontendu - programista.
               </p>
-              <button className="bg-blue text-light px-20 py-5 lg:font-bold font-medium lg:text-lg text-md mt-5">
-                Projekty
-              </button>
+              <Link to="projects" smooth={true} spy={true}>
+                <motion.button
+                  className="bg-blue text-light px-20 py-5 lg:font-bold font-medium lg:text-lg text-md mt-5"
+                  variants={projectBtn}
+                  whileHover="hover"
+                >
+                  Projekty
+                </motion.button>
+              </Link>
             </motion.div>
           </div>
         </StyledContent>
+        <Link to="home" smooth={true} spy={true}>
+          <ScrollButton ref={scrollBtnRef}>
+            <span></span>
+          </ScrollButton>
+        </Link>
       </StyledPage>
     </AnimatePresence>
   );

@@ -34,10 +34,10 @@ export const line = {
 
 export const name = {
   hidden: {
-    x: "600",
+    y: "-300",
   },
   visible: {
-    x: 0,
+    y: 0,
     transition: {
       duration: 1,
     },

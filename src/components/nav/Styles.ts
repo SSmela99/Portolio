@@ -75,7 +75,6 @@ export const Menu = styled.div`
   width: 0;
   overflow: hidden;
   height: 165px;
-  border-bottom: 1px solid #212121;
   transition: 0.5s;
 
   @media (min-width: 1023px) {
