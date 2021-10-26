@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Description = styled.p`
-  min-height: 200px;
+  min-height: 150px;
 
   @media (max-width: 1023px) {
     min-height: max-content;
@@ -12,6 +12,7 @@ export const Description = styled.p`
 export const Technology = styled.div`
   min-width: 100px;
   min-height: 130px;
+  transition: 0.5s;
 
   @media (max-width: 1535px) and (min-width: 1279px) {
     min-height: 90px;

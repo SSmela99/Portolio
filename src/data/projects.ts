@@ -4,6 +4,7 @@ export const projects = [
     description:
       "Duis tempor Lorem ea labore veniam quis minim. Deserunt est do ipsum aliquip do nostrud. Consequat laboris anim tempor exercitation nostrud laboris id nostrud adipisicing anim deserunt. Qui aliqua dolor laborum consectetur. Ullamco aliquip cupidatat sit enim laborum laboris aliquip exercitation cupidatat ipsum culpa.",
     image: "../images/project1.png",
+    animationType: "fade-right",
     technologies: [
       {
         name: "React",
@@ -43,6 +44,7 @@ export const projects = [
       "Duis ted. Consequat laboris anim tempor exercitation nostrud laboris id nostrud adipisicing anim deserunt. Qui aliqua dolor laborum consectetur. Ullamco aliquip cupidatat sit enim laborum laboris aliquip exercitation cupidatat ipsum culpa.",
     image:
       "https://i.picsum.photos/id/681/1920/1080.jpg?hmac=qyb0NfTEkQw9QdsIYQbV0GhAEyKiPcAfetmIF_e8Kik",
+    animationType: "fade-left",
     technologies: [
       {
         name: "React",
@@ -57,6 +59,7 @@ export const projects = [
       "Duis tempor Lorem ea labore veniam quis minim. Deserunt est do ipsum aliquip do nostrud. Consequat laboris anim tempor exercitation nostrud laboris id nostrud adipisicing anim deserunt. Qui aliqua dolor laborum consectetur. Ullamco aliquip cupidatat sit enim laborum laboris aliquip exercitation cupidatat ipsum culpa.",
     image:
       "https://i.picsum.photos/id/681/1920/1080.jpg?hmac=qyb0NfTEkQw9QdsIYQbV0GhAEyKiPcAfetmIF_e8Kik",
+    animationType: "fade-right",
     technologies: [
       {
         name: "React",
@@ -71,6 +74,7 @@ export const projects = [
       "Duis tempor Lorem ea labore veniam quis minim. Deserunt est do ipsum aliquip do nostrud. Consequat laboris anim tempor exercitation nostrud laboris id nostrud adipisicing anim deserunt. Qui aliqua dolor laborum consectetur. Ullamco aliquip cupidatat sit enim laborum laboris aliquip exercitation cupidatat ipsum culpa.",
     image:
       "https://i.picsum.photos/id/681/1920/1080.jpg?hmac=qyb0NfTEkQw9QdsIYQbV0GhAEyKiPcAfetmIF_e8Kik",
+    animationType: "fade-left",
     technologies: [
       {
         name: "React",

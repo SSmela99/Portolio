@@ -66,3 +66,50 @@ export const StyledContent = styled.div`
     max-height: 700px;
   }
 `;
+
+export const ScrollButton = styled.div`
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  background-color: #393efa;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgb(21, 21, 21);
+  z-index: 999;
+
+  span {
+    background-color: #fff;
+    width: 40px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 25px;
+      background-color: #fff;
+      position: absolute;
+      top: -50%;
+      left: -1px;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      transform: rotate(-30deg);
+      top: -7px;
+    }
+
+    &::before {
+      transform: rotate(30deg);
+      top: 7px;
+    }
+  }
+`;

@@ -14,13 +14,42 @@ const ProjectItem: React.FC<IProject> = ({
   description,
   image,
   technologies,
+  animationType,
 }: IProject) => (
   <div className="item">
-    <h1 className="font-medium md:text-3xl text-2xl">{title}</h1>
-    <img src={image} alt="project" className="w-full my-5" />
-    <Description className="text-md font-light">{description}</Description>
-    <h1 className="font-semibold text-lg mb-5">Użyte technologie:</h1>
-    <div className="flex items-center min-w-2 flex-wrap lg:justify-start justify-center">
+    <h1
+      className="font-medium md:text-3xl text-2xl"
+      data-aos={animationType}
+      data-aos-offset="250"
+    >
+      {title}
+    </h1>
+    <img
+      src={image}
+      alt="project"
+      className="w-full my-5 transition-all"
+      data-aos={animationType}
+      data-aos-offset="200"
+    />
+    <Description
+      className="text-md font-light"
+      data-aos={animationType}
+      data-aos-offset="200"
+    >
+      {description}
+    </Description>
+    <h1
+      className="font-semibold text-lg mb-5"
+      data-aos={animationType}
+      data-aos-offset="150"
+    >
+      Użyte technologie:
+    </h1>
+    <div
+      className="flex items-center min-w-2 flex-wrap lg:justify-start justify-center"
+      data-aos={animationType}
+      data-aos-offset="150"
+    >
       {technologies.map((technology) => {
         return (
           <>
@@ -59,6 +88,7 @@ export const Project: React.FC<IProjects> = ({ projects }: IProjects) => {
             image={project.image}
             technologies={project.technologies}
             key={project.title}
+            animationType={project.animationType}
           />
         );
       })}
