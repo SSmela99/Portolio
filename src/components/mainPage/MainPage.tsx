@@ -130,10 +130,6 @@ const MainPage = () => {
               <h3 className="text-blue lg:text-3xl text-xl lg:font-bold font-medium lg:my-3 my-1">
                 WEB DEVELOPER
               </h3>
-              <p className="text-dark lg:text-lg text-sm lg:font-light font-normal">
-                Nazywam się Sebastian Smela, zainteresowany technologiami
-                frontendu - programista.
-              </p>
               <Link to="projects" smooth={true} spy={true}>
                 <motion.button
                   className="bg-blue text-light px-20 py-5 lg:font-bold font-medium lg:text-lg text-md mt-5"

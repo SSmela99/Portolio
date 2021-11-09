@@ -13,6 +13,7 @@ export interface IProject {
   image: string;
   animationType: string;
   technologies: Technology[];
+  link: string;
 }
 
 const Projects = () => {

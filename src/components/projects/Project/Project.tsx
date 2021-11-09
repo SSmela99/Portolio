@@ -15,15 +15,20 @@ const ProjectItem: React.FC<IProject> = ({
   image,
   technologies,
   animationType,
+  link,
 }: IProject) => (
   <div className="item">
-    <h1
-      className="font-medium md:text-3xl text-2xl"
+    <div
+      className="flex items-center justify-between"
       data-aos={animationType}
-      data-aos-offset="250"
+      data-aos-offset="200"
     >
-      {title}
-    </h1>
+      <h1 className="font-medium md:text-3xl text-2xl">{title}</h1>
+      <a href={link} target="_blank" className="underline">
+        przejdź do strony!
+      </a>
+    </div>
+
     <img
       src={image}
       alt="project"
@@ -89,6 +94,7 @@ export const Project: React.FC<IProjects> = ({ projects }: IProjects) => {
             technologies={project.technologies}
             key={project.title}
             animationType={project.animationType}
+            link={project.link}
           />
         );
       })}

@@ -34,9 +34,16 @@ export const Contact = styled.div`
   border: 1px solid #212121;
   padding: 20px;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-right: 10px;
   font-weight: 600;
   text-align: center;
+  min-width: 260px;
+
+  @media (max-width: 1023px) {
+    min-width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+  }
 
   @media (max-width: 639px) {
     font-size: 14px;
