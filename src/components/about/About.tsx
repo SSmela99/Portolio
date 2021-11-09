@@ -98,90 +98,112 @@ const About = () => {
             Stack Technologiczny
           </h1>
           <Technologies>
-            <img
-              src={javascript}
-              alt="logo"
+            <div
               data-aos="flip-right"
               data-aos-delay="100"
               data-aos-offset="220"
-            />
-            <img
-              src={typescript}
-              alt="logo"
+            >
+              <img src={javascript} alt="logo" />
+              <p className="text-center">JavaScript</p>
+            </div>
+            <div
               data-aos="flip-right"
               data-aos-delay="200"
               data-aos-offset="220"
-            />
-            <img
-              src={react}
-              alt="logo"
+            >
+              <img src={typescript} alt="logo" />
+              <p className="text-center">TypeScript</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="300"
               data-aos-offset="220"
-            />
-            <img
-              src={html}
-              alt="logo"
+            >
+              <img src={react} alt="logo" />
+              <p className="text-center">React</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="400"
               data-aos-offset="220"
-            />
-            <img
-              src={css}
-              alt="logo"
+            >
+              <img src={html} alt="logo" />
+              <p className="text-center">Html</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="500"
               data-aos-offset="220"
-            />
-            <img
-              src={node}
-              alt="logo"
+            >
+              <img src={css} alt="logo" />
+              <p className="text-center">Css</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="100"
               data-aos-offset="220"
-            />
-            <img
-              src={mongodb}
-              alt="logo"
+            >
+              <img src={node} alt="logo" />
+              <p className="text-center">Node.js</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="200"
               data-aos-offset="220"
-            />
-            <img
-              src={tailwind}
-              alt="logo"
+            >
+              <img src={mongodb} alt="logo" />
+              <p className="text-center">MongoDB</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="300"
               data-aos-offset="220"
-            />
-            <img
-              src={bootstrap}
-              alt="logo"
+            >
+              <img src={tailwind} alt="logo" />
+              <p className="text-center">Tailwind</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="400"
               data-aos-offset="220"
-            />
-            <img
-              src={styledComponents}
-              alt="logo"
+            >
+              <img src={bootstrap} alt="logo" />
+              <p className="text-center">Bootstrap</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="500"
               data-aos-offset="220"
-            />
-            <img
-              src={framer}
-              alt="logo"
+            >
+              <img src={styledComponents} alt="logo" />
+              <p className="text-center">styled-components</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="100"
               data-aos-offset="100"
-            />
-            <img
-              src={materialUi}
-              alt="logo"
+            >
+              <img src={framer} alt="logo" />
+              <p className="text-center">Framer Motion</p>
+            </div>
+
+            <div
               data-aos="flip-right"
               data-aos-delay="200"
               data-aos-offset="100"
-            />
+            >
+              <img src={materialUi} alt="logo" />
+              <p className="text-center">MaterialUI</p>
+            </div>
           </Technologies>
         </div>
       </div>
