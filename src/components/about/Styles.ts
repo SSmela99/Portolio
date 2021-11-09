@@ -37,6 +37,12 @@ export const Technologies = styled.div`
     cursor: pointer;
     transition: 0.5s;
 
+    &::after {
+      content: "A";
+      display: block;
+      background-color: red;
+    }
+
     @media (max-width: 1279px) {
       max-width: 130px;
     }

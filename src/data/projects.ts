@@ -77,7 +77,7 @@ export const projects = [
   {
     title: "React-tailwind Site",
     description:
-      "Duis ted. Consequat laboris anim tempor exercitation nostrud laboris id nostrud adipisicing anim deserunt. Qui aliqua dolor laborum consectetur. Ullamco aliquip cupidatat sit enim laborum laboris aliquip exercitation cupidatat ipsum culpa.",
+      "Projekt strony typu landing. W projekcie została użyta biblioteka React.",
     image: "../images/project2.png",
     animationType: "fade-left",
     link: "https://eager-kilby-94ac0c.netlify.app/",
@@ -101,8 +101,7 @@ export const projects = [
   },
   {
     title: "Porfolio",
-    description:
-      "Duis tempor Lorem ea labore veniam quis minim. Deserunt est do ipsum aliquip do nostrud. Consequat laboris anim tempor exercitation nostrud laboris id nostrud adipisicing anim deserunt. Qui aliqua dolor laborum consectetur. Ullamco aliquip cupidatat sit enim laborum laboris aliquip exercitation cupidatat ipsum culpa.",
+    description: "Strona mojego portfolio, przedstawia moje projekty.",
     image: "../images/project4.png",
     animationType: "fade-left",
     link: "https://cocky-gates-77c9f8.netlify.app",
