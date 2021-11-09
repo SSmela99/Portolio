@@ -27,25 +27,21 @@ const About = () => {
         </h1>
         <div className="font-light text-lg text-dark leading-8">
           <p data-aos="zoom-in" data-aos-offset="300">
-            Student III roku Informatyki na Społecznej Akademii Nauk. Interesuje
-            się technologiami frontendowymi, wiążę z tym swoją przyszłość i chcę
-            rozwijać się w tym kierunku. Jestem samoukiem, uczę się
-            programowania od ponad półtora roku. Myśle, że moje umiejętności
-            oraz wiedza są wystarczające by znaleźć moją pierwszą prace jako
-            programista. Web development jest dla mnie ciekawy i cały czas
-            poznaje nowe technologie czy frameworki pozwalające budować to coraz
-            ciekawsze aplikacje. Biblioteka React jest czymś z czym chciałbym
-            pracować na codzień.
+            Jestem studentem III roku Informatyki na Społecznej Akademii Nauk.
+            Interesuje się technologiami frontendowymi, wiążę z tym swoją
+            przyszłość i chcę rozwijać się w tym kierunku. Programowania uczę
+            się na własną rękę od ponad półtora roku. Przez ten czas zdobyłem
+            solidne podstawy, które umożliwiają mi samodzielne tworzenie
+            różnorakich aplikacji. Web development jest dla mnie bardzo
+            interesujący, cały czas poznaje nowe technologie i frameworki dzięki
+            którym, jestem w stanie budować coraz to ciekawsze projekty.
           </p>
           <div
             className="text-center mt-10"
             data-aos="zoom-in"
             data-aos-offset="300"
           >
-            <p>
-              Jeśli zainteresowałem Cię, poniżej zostawiam link do mojego
-              Github'a
-            </p>
+            <p>Poniżej zostawiam link do mojego Github'a</p>
             <a
               href="https://github.com/SSmela99"
               target="_blank"
